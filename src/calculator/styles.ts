@@ -44,24 +44,28 @@ export const Buttons = styled.div`
 
 export const CalculatorKey = styled.button`
   max-width: 100%;
-  min-width: 33%;
+  min-width: 33.33%;
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 `;
 
 export const CalculatorContainerLeft = styled.div`
   display: flex;
   flex-wrap: wrap;
-  width: 70%;
+  flex: 1;
 `;
 
 export const CalculatorContainerRight = styled.div`
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 25%;
 `;
