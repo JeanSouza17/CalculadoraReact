@@ -5,41 +5,45 @@ export const Container = styled.div`
   flex-direction: column;
   border-radius: 20px;
   align-items: center;
-  background: #c9d6ff; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #e2e2e2,
-    #c9d6ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: rgb(49, 71, 85);
   background: linear-gradient(
-    to bottom,
-    #e2e2e2,
-    #c9d6ff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    180deg,
+    rgba(49, 71, 85, 1) 0%,
+    rgba(16, 32, 39, 1) 100%
+  );
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-box-shadow: 0px 0px 105px -32px rgba(0, 0, 0, 1);
   -moz-box-shadow: 0px 0px 105px -32px rgba(0, 0, 0, 1);
   box-shadow: 0px 0px 105px -32px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: inset 0px 0px 2px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0px 0px 2px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px 0px 2px 1px rgba(0, 0, 0, 0.5);
+  padding: 40px 20px;
 `;
 
 export const Title = styled.h1`
   font-size: 48px;
+  display: flex;
+  justify-content: center;
+  color: rgba(16, 32, 39, 1);
 `;
 
 export const Display = styled.div`
-  background-color: #000000;
-  padding: 40px 20px;
+  background-color: transparent;
   font-size: 24px;
   display: flex;
   width: 100%;
   justify-content: flex-end;
   color: #ffffff;
+  border-bottom: 1px solid #fff;
+  padding: 20px 20px;
+  font-size: 36px;
 `;
+
 export const Buttons = styled.div`
-  padding: 20px 20px 40px 20px;
   display: flex;
   width: 100%;
+  margin-top: 10px;
 `;
 
 export const CalculatorKey = styled.button`
@@ -50,11 +54,16 @@ export const CalculatorKey = styled.button`
   justify-content: center;
   align-items: center;
   font-size: 24px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: transparent;
   transition: background-color 0.2s;
+  border-radius: 100px;
 
   &:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:active {
+    background-color: rgba(255, 255, 255, 0.6);
   }
 `;
 

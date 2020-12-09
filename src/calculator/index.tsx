@@ -11,8 +11,8 @@ import {
 
 const Calculator: React.FC = () => (
   <>
+    <Title>Calculadora</Title>
     <Container>
-      <Title>Caculadora</Title>
       <Display>555</Display>
       <Buttons>
         <CalculatorContainerLeft>

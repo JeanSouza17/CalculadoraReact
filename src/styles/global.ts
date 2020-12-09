@@ -10,22 +10,20 @@ export default createGlobalStyle`
   body {
     -webkit-font-smoothing: antialiased;
     height: 100vh;
-    background: #67B26F;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ebe8e3;  
     display: flex;
     align-items: center;
   }
 
   body, input, button {
     font: 16px Nunito, sans-serif;
-    color: #000000;
+    color: #fff;
   }
 
   #root {
-    width: 380px;
+    min-width: 380px;
     margin: 0 auto;
-    padding: 20px 20px;
+    padding: 40px 20px;
   }
 
   button {
