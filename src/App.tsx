@@ -4,7 +4,7 @@ import Calculator from "./calculator";
 
 const App: React.FC = () => (
   <>
-    <Calculator>Calculadora</Calculator>
+    <Calculator></Calculator>
     <GlobalStyle />
   </>
 );
